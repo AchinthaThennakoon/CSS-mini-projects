@@ -5,8 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <div
+      class="w-full min-h-screen bg-[url('/images/image.png')] bg-center bg-cover"
+    >
+      <nav class="flex items-center justify-between p-2.5">
+        <img class="w-40 cursor-pointer" src="images/logo.png" alt="" />
+        <ul class="flex flex-row">
+          <li><a href="#" class="no-underline text-white mr-10">Home</a></li>
+          <li><a href="#" class="no-underline text-white mr-10">About</a></li>
+          <li>
+            <a href="#" class="no-underline text-white mr-10">features</a>
+          </li>
+          <li><a href="#" class="no-underline text-white">Contact</a></li>
+        </ul>
+        <img class="w-10 cursor-pointer" src="images/cart.png " alt="" />
+      </nav>
+
+      <div class="container">
+        <div class="grid grid-cols-2">
+          <div class="text-white mt-48 ml-10">
+            <h1 class="text-6xl font-bold">
+              groceries<br />delivery wthin <br /><span class="font-light"
+                >15 minutes</span
+              >
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+              amet laborum exercitationem nemo quaerat repellat quo voluptas
+              error sed incidunt!
+            </p>
+            <div class="mt-10">
+              <a
+                href="#"
+                class="bg-yellow-300 rounded-3xl py-3 px-8 mr-4 cursor-pointer hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border"
+                >order now</a
+              >
+              <a href="#">Download App <span class="text-lg inline-block rotate-90"> &#10148</span></a>
+            </div>
+          </div>
+          <div class="text-white"><img src="./images/grocery-image.png" class="w-full"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
